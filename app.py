@@ -67,4 +67,4 @@ def generate_names(prompt, num_suggestions):
     return output_list
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False, host='0.0.0.0')
