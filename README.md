@@ -70,4 +70,4 @@ NameForge is released under the MIT License. See the [LICENSE](LICENSE.md) file 
 
 ---
 
-We hope you find NameForge useful for your entrepreneurial endeavors and look forward to your contributions and feedback!
+I hope you find NameForge useful for your entrepreneurial endeavors and look forward to your contributions and feedback!
