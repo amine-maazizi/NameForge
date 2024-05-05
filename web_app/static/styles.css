@@ -1,0 +1,178 @@
+body, html {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Hide horizontal scroll */
+    overflow-y: hidden;
+    background:  #024950;
+    color: #FFFFFF; /* Ensure text color is light for readability against a dark background */
+}
+
+
+.header h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900; /* Makes it very bold */
+    font-size: 2.5rem; /* Adjust size as needed */
+    color: #FFFFFF; /* Assuming white text */
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+}
+
+
+.header {
+    background-color: #964734; /* brick red from palette */
+    color: #FFFFFF; /* white for contrast */
+    text-align: center;
+    padding: 20px 0;
+}
+
+.form-container {
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #0FA4AF; /* lighter teal from palette */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 15px; /* Rounded corners */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* add space between inputs */
+}
+
+input[type="text"], input[type="number"] {
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    flex-grow: 1; /* Allows input to fill available space */
+    margin: 0;
+    border: 2px solid rgba(0,0,0,0.0); /* Transparent border */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #AFDDE5; /* light blue from palette */
+    color: #333333; /* dark text for readability */
+    border: none;
+    cursor: pointer;
+    border-radius: 20px; /* Increase the border-radius */
+    border: 2px solid rgba(0,0,0,0.0); 
+}
+
+input:focus, button:hover {
+    background-color: #003135; /* darker teal variant */
+    outline: none; /* Remove default outline */
+    border: 2px solid #AFDDE5; /* Change border color on focus or hover */
+    color: #FFFFFF; /* white text for contrast */
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+}
+
+.input-group i {
+    margin-right: 10px; /* Space between icon and input */
+    color: #AFDDE5; /* Adjust color to match design */
+}
+
+.results-container {
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    background-color: #FFFFFF; /* white background for results */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 15px; /* Rounded corners */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    color: #000;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+.bubble-container {
+    position: relative;
+    overflow: hidden; /* Ensures bubbles don't show outside this container */
+    width: 100%; /* Ensure the container does not exceed the viewport width */
+}
+
+.bubble {
+    position: absolute;
+    bottom: -100px; /* Start from below the screen */
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    opacity: 0;
+    animation: rise 10s infinite ease-in;
+}
+
+/* Animation keyframes for rising bubbles */
+@keyframes rise {
+    0% {
+        bottom: -100px;
+        opacity: 0.7;
+    }
+    100% {
+        bottom: 110%; /* End above the screen */
+        opacity: 0;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.form-container {
+    animation: slideIn 2s ease-out forwards;
+}
+
+.footer {
+    background-color: #024950; /* Dark background for footer */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Spacing between icons */
+}
+
+.footer a {
+    color: white; /* Icon color */
+    text-decoration: none; /* Removes underline from icons */
+    font-size: 24px; /* Icon size */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.footer a:hover {
+    color: #AFDDE5; /* Lighter blue when hovered */
+}
+

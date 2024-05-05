@@ -1,0 +1,5 @@
+Flask==2.0.3
+transformers==4.15.0
+torch==1.10.0
+datasets==1.18.3
+requests==2.26.0
