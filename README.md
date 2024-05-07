@@ -2,6 +2,8 @@
 
 NameForge is an innovative application designed to generate unique and creative names for companies, brands, or startups based on user-provided keywords. Utilizing a fine-tuned GPT-2 model, NameForge offers suggestions that are not only unique but also relevant and inspiring. Due to time constraints and computational limitations, the model was fine-tuned on only 1,000 samples out of a potential 7 million available samples and for only 3 epochs. Additionally, the dataset used for training was not optimized for quality. As a result, while the application strives to provide useful suggestions, the performance and creativity of the generated names might not fully reach the potential of a more comprehensively trained model.
 
+![Web App](media/med_0.PNG)
+
 
 ## Features
 
