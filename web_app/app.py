@@ -6,8 +6,9 @@ import random
 app = Flask(__name__)
 
 # Load your trained model and tokenizer
-model = GPT2LMHeadModel.from_pretrained('./trained_model')
-tokenizer = GPT2Tokenizer.from_pretrained('./trained_model', padding_side='left')  # Set padding side to left
+MODEL_PATH: str = 'E:/models/nameforge_model/'
+model = GPT2LMHeadModel.from_pretrained(MODEL_PATH)
+tokenizer = GPT2Tokenizer.from_pretrained(MODEL_PATH, padding_side='left')  # Set padding side to left
 model.eval()  # Set model to evaluation mode
 
 @app.route('/')
@@ -67,4 +68,4 @@ def generate_names(prompt, num_suggestions):
     return output_list
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False, host='0.0.0.0')
